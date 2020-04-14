@@ -13,7 +13,7 @@ if [ ! -d "Inputs" ]; then
 else
 	rm Inputs/*.txt
 fi
-#-fopt-info-vec-optimized
+
 g++ -std=c++11 -o psos main/main.cpp main/benchmarking.cpp main/benchmarkingP.cpp include/benchmarking.hpp src/particle.cpp src/pso.cpp include/particle.hpp include/pso.hpp
 
 g++ -O3 -ftree-vectorize  -mavx -std=c++11 -o pso main/main.cpp main/benchmarking.cpp main/benchmarkingP.cpp include/benchmarking.hpp src/particle.cpp src/pso.cpp include/particle.hpp include/pso.hpp -fopenmp
