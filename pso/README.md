@@ -1,7 +1,7 @@
 
 ## Compilar
 
-g++ -std=c++11 -o pso main/main.cpp main/benchmarking.cpp main/benchmarkingP.cpp include/benchmarking.hpp src/particlecpp src/pso.cpp include/particle.hpp include/pso.hpp -fopenmp
+g++ -std=c++11 -o pso main/main.cpp main/benchmarking.cpp main/benchmarkingP.cpp include/benchmarking.hpp src/particle.cpp src/pso.cpp include/particle.hpp include/pso.hpp -fopenmp
 
 ## Observação
 Para a execução paralela é obrigatório o uso de  "-fopenmp", para as demais execuções é opcional.
